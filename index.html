@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- =======================
+         META & SEO
+    ======================= -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A beginner-friendly example of a semantic HTML5 webpage that follows accessibility and SEO best practices.">
+    <meta name="author" content="Your Name">
+    <title>Accessible & SEO-Friendly HTML5 Page</title>
+
+    <!-- Favicon (optional for SEO completeness) -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- =======================
+         HEADER SECTION
+    ======================= -->
+    <header>
+        <h1>Welcome to GreenLeaf Café</h1>
+        <p>Your neighborhood spot for organic coffee and fresh pastries.</p>
+
+        <!-- Navigation landmark for accessibility -->
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="#about" title="Learn more about us">About</a></li>
+                <li><a href="#menu" title="See our menu">Menu</a></li>
+                <li><a href="#contact" title="Get in touch">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- =======================
+         MAIN CONTENT
+    ======================= -->
+    <main>
+        <!-- ABOUT SECTION -->
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">About GreenLeaf Café</h2>
+            <p>
+                GreenLeaf Café is committed to sustainability and community. We serve fair-trade coffee and locally baked pastries every morning.
+            </p>
+            <figure>
+                <img src="cafe-front.jpg" alt="Front view of GreenLeaf Café with outdoor seating">
+                <figcaption>Our café on a sunny morning.</figcaption>
+            </figure>
+        </section>
+
+        <!-- MENU SECTION -->
+        <section id="menu" aria-labelledby="menu-heading">
+            <h2 id="menu-heading">Our Menu</h2>
+
+            <article>
+                <h3>Coffee & Beverages</h3>
+                <p>Try our signature espresso, cold brew, or herbal teas.</p>
+            </article>
+
+            <article>
+                <h3>Pastries & Snacks</h3>
+                <p>All pastries are baked fresh daily — from croissants to gluten-free muffins.</p>
+            </article>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact Us</h2>
+            <address>
+                <p><strong>Address:</strong> 123 Green Street, EcoTown</p>
+                <p><strong>Phone:</strong> <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                <p><strong>Email:</strong> <a href="mailto:info@greenleafcafe.com">info@greenleafcafe.com</a></p>
+            </address>
+
+            <form aria-label="Contact form">
+                <fieldset>
+                    <legend>Send us a message</legend>
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Send</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <!-- =======================
+         FOOTER SECTION
+    ======================= -->
+    <footer>
+        <p>&copy; 2025 GreenLeaf Café — All Rights Reserved.</p>
+        <p>
+            <a href="#top" title="Back to top">Back to top</a>
+        </p>
+    </footer>
+</body>
+</html>
